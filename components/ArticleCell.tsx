@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-interface Source {
+export interface Source {
   id: string;
   name: string;
 }
-interface ArticleProps {
+export interface ArticleProps {
   source: Source;
   author: string;
   title: string;
