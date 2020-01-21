@@ -6,3 +6,11 @@ export function api<T>(url: string): Promise<T> {
     return response.json<T>();
   });
 }
+
+export interface ApiResponse {
+  status: string;
+  totalResults: number;
+  articles: ArticleProps[];
+}
+
+import { ArticleProps } from "../components/ArticleCell";
