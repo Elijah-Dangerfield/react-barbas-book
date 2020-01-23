@@ -13,7 +13,7 @@ const ArticleFeed = props => {
 
   function fetchData() {
     api<ApiResponse>(
-      "https://newsapi.org/v2/everything?q=bitcoin&apiKey=0cec05e663864f78867ef7af73988cc2"
+      "https://newsapi.org/v2/everything?q=keanu&apiKey=0cec05e663864f78867ef7af73988cc2"
     )
       .then((response: ApiResponse) => {
         setApiResults(response.articles);
